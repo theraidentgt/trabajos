@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Triqui UDEC</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css" >
+	<script type="text/javascript" src = "script.js" >
+	
+	</script>
+	
+</head>
+<body>
+	<center>
+		<br>
+		<select id = 'seleJugada' onclick="document.getElementById('sonido2').play()">
+			<option value="1">X</option>
+			<option value="2">O</option>
+		</select>
+		<button id = "iniJuego" onclick="document.getElementById('sonido').play()" >Nuevo Juego</button>
+		
+		<br>
+		<br>
+		<div id="escenario" onclick="document.getElementById('sonido3').play()"></div>
+		<br>
+		<div id="puntuacion">Humano = 0 - PC = 0</div>
+		<div id="inicia">Inicia el Humano</div>
+	
+	<audio src="guerra.mp3" controls autoplay="true" loop> </audio>
+	
+	<audio src="boton.wav" id ="sonido"  preload></audio>
+	<audio src="tablero.wav" id ="sonido3"  preload></audio>
+	<audio src="select.wav" id ="sonido2"  preload></audio>
+	</center>
+	
+</body>
+</html>
